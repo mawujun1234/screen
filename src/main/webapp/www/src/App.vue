@@ -21,6 +21,6 @@ export default {
 #app {
   width: 100%;
   height:100%;
-  background-color: rgba(5, 5, 5,0.9);
+  background-color: rgba(0, 0, 17,0.9);
 }
 </style>
