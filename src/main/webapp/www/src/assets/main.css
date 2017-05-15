@@ -2,9 +2,19 @@ html,body {
   width:100%;
   height:100%;
   margin:0px;
+  overflow-x: hidden;
+  overflow-y: visible;
 }
 body {
+/*  background: #000;
   background-size:auto 100%;
   background-position:center center;
   background-image: url(./bg.jpg);
+  overflow: hidden;
+*/
+  width: 1920px;
+  height: 1080px;
+  background: url("https://datav.oss-cn-hangzhou.aliyuncs.com/uploads/images/163de850e78c6431461139b714e333f4.jpg") 0% 0% / 100%;
+  transform: scale(0.376042);
+  transform-origin: left top 0px;
 }
