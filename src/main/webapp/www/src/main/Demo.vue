@@ -1,5 +1,5 @@
 <template>
-  <div  id="demo" class="border-corner">
+  <div  id="demo" class="border-corner comp-demo">
 
   </div>
 </template>
@@ -80,4 +80,7 @@ export default {
 }
 </script>
 <style>
+.comp-demo {
+  position: absolute;
+}
 </style>
