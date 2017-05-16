@@ -11,10 +11,23 @@ body {
   background-position:center center;
   background-image: url(./bg.jpg);
   overflow: hidden;
-*/
+
   width: 1920px;
   height: 1080px;
-  background: url("https://datav.oss-cn-hangzhou.aliyuncs.com/uploads/images/163de850e78c6431461139b714e333f4.jpg") 0% 0% / 100%;
   transform: scale(0.376042);
-  transform-origin: left top 0px;
+  */
+  background: url("./bg1.jpg") 0% 0% / 100%;
+  background-size:100% 100%;
+  transform-origin: left top;
+}
+
+.border-corner {
+	border-style: solid;
+	border-width: 8px 8px;
+	border-image-slice: 16 16 fill;
+	border-image-source: url("./border-corner.png");
+	border-image-width: initial;
+	border-image-outset: initial;
+	border-image-repeat: initial;
+	background: none;
 }
