@@ -30,7 +30,7 @@ export default {
               color:'#99CCFF'
             }
           },
-          data: ["衬衫","羊毛衫","雪纺衫","裤子","高跟鞋","袜子"]
+          data: ["衬衫","西服","领带","裤子","床套","袜子"]
         },
         yAxis: {
           axisLine:{

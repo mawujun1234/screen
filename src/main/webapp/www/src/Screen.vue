@@ -7,6 +7,8 @@
     <Recovery id="recovery"></Recovery>
     <Rate id="rate"></Rate>
     <RateBarComp id="ratebarcomp"></RateBarComp>
+    <RateProfit id="rateprofit"></RateProfit>
+    <TimeSaleComp id="timesalecomp"></TimeSaleComp>
   </div>
 </template>
 
@@ -17,7 +19,8 @@ import Timesale from './main/Timesale.vue';
 import Recovery from './main/Recovery.vue';
 import Rate from './main/Rate.vue';
 import RateBarComp from './main/RateBarComp.vue';
-
+import RateProfit from './main/RateProfit.vue';
+import TimeSaleComp from './main/TimeSaleComp.vue';
 
 
 export default {
@@ -27,7 +30,7 @@ export default {
       msg: ''
     }
   },
-  components: { Demo,Title,Timesale,Recovery,Rate,RateBarComp},
+  components: { Demo,Title,Timesale,Recovery,Rate,RateBarComp,RateProfit,TimeSaleComp},
   mounted:function(){
 
   }
@@ -36,9 +39,9 @@ export default {
 
 <style>
 #demo{
-  height:300px;
-  width:400px;
-  top:65px;
+  height:200px;
+  width:300px;
+  top:35px;
 }
 #title{
   top:0px;
@@ -66,5 +69,16 @@ export default {
   min-height:340px;
   top:260px;
   left:500px;
+}
+#rateprofit{
+  width:200px;
+  height:300px;
+  top:265px;
+}
+#timesalecomp{
+  width:200px;
+  height:300px;
+  top:265px;
+  left:200px;
 }
 </style>
