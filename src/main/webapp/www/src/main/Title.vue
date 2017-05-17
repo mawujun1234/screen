@@ -5,6 +5,7 @@
   </div>
 </template>
 <script>
+var title_nowtime=null;
 window.nowtime=function(){
               var nowDate = new Date();
               var year = nowDate.getFullYear();
@@ -19,7 +20,7 @@ window.nowtime=function(){
               var second = nowDate.getSeconds();
               second = second>9 ? second : "0" + second;
 
-              $("#title-nowtime").text(year+"."+month+"."+date+" "+hour+":"+miunte+":"+second);
+              title_nowtime.text(year+"."+month+"."+date+" "+hour+":"+miunte+":"+second);
 }
 export default {
   data () {
@@ -28,8 +29,12 @@ export default {
     }
   },
   mounted:function(){
-    nowtime();
-    setInterval("nowtime()", 1000);
+    title_nowtime=$("#title-nowtime");
+    if(title_nowtime){
+      nowtime();
+      setInterval("nowtime()", 1000);
+    }
+
   },
   methods: {
 
@@ -55,7 +60,6 @@ export default {
 .comp-title div {
   color:rgba(255, 255, 255, 0.498039);
   font-family: "Microsoft Yahei";
-  font-weight: normal;
   font-size: 12px;
 }
 </style>

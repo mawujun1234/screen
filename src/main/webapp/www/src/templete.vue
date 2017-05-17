@@ -10,8 +10,12 @@ export default {
 
     }
   },
+  mounted: function mounted() {
+    //do something after mounting vue instance
+    let vm=this;
+  },
   methods: {
-  
+
   }
 }
 </script>

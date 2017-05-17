@@ -19,7 +19,7 @@ export default {
           show:true,
           text: '图表示例',
           textStyle:{
-            color:'#3366CC',
+            color:'#3399CC',//#3366CC
             fontSize:14
           }
         },
