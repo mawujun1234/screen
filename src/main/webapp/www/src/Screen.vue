@@ -8,7 +8,11 @@
     <Rate id="rate"></Rate>
     <RateBarComp id="ratebarcomp"></RateBarComp>
     <RateProfit id="rateprofit"></RateProfit>
-    <TimeSaleComp id="timesalecomp"></TimeSaleComp>
+    <TimesaleComp id="timesalecomp"></TimesaleComp>
+    <TimesaleType id="timesaletype"></TimesaleType>
+    <List id="list"></List>
+
+    <Alert id="alert"></Alert>
   </div>
 </template>
 
@@ -20,8 +24,10 @@ import Recovery from './main/Recovery.vue';
 import Rate from './main/Rate.vue';
 import RateBarComp from './main/RateBarComp.vue';
 import RateProfit from './main/RateProfit.vue';
-import TimeSaleComp from './main/TimeSaleComp.vue';
-
+import TimesaleComp from './main/TimesaleComp.vue';
+import TimesaleType from './main/TimesaleType.vue';
+import Alert from './main/Alert.vue';
+import List from './main/List.vue';
 
 export default {
   name: 'screen',
@@ -30,7 +36,7 @@ export default {
       msg: ''
     }
   },
-  components: { Demo,Title,Timesale,Recovery,Rate,RateBarComp,RateProfit,TimeSaleComp},
+  components: { Demo,Title,Timesale,Recovery,Rate,RateBarComp,RateProfit,TimesaleComp,TimesaleType,Alert,List},
   mounted:function(){
 
   }
@@ -77,8 +83,17 @@ export default {
 }
 #timesalecomp{
   width:200px;
-  height:300px;
   top:265px;
   left:200px;
+}
+#timesaletype{
+  width:200px;
+  top:265px;
+  left:390px;
+}
+#list{
+  color:red;
+  top:565px;
+  left:490px;
 }
 </style>

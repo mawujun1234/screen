@@ -1,6 +1,6 @@
 <template>
-  <div id="timesalecomp" class="timesalecomp">
-    <div id="timesalecomp_bar">
+  <div id="timesaletype" class="timesaletype">
+    <div id="timesaletype_bar">
     </div>
   </div>
 </template>
@@ -29,12 +29,12 @@ export default {
   methods: {
     show_sale_bar:function(){
       let vm=this;
-      let myChart = echarts.init(document.getElementById('timesalecomp_bar'));
+      let myChart = echarts.init(document.getElementById('timesaletype_bar'));
       vm.myChart=myChart;
       var option = {
         title: {
           show:true,
-          text: '实时销售',
+          text: '大类实时销售',
           textStyle:{
             color:'#3399CC',//#3366CC
             fontSize:14
@@ -65,7 +65,7 @@ export default {
           yAxis: {
               type: 'category',
               inverse:true,
-              data: ['浙江','中原','华东','重庆','北方','闽赣','东北','西北','南方','服饰'],
+              data: ['衬衫','西服','裤子','夹克','T恤','大衣','毛衫','领带','鞋包','羽绒服'],
               axisLine:{
                 lineStyle:{
                   color:'#99CCFF'
@@ -104,10 +104,10 @@ export default {
 }
 </script>
 <style>
-.timesalecomp{
+.timesaletype{
   position: absolute;
 }
-#timesalecomp_bar{
+#timesaletype_bar{
   width:160px;
   height:390px;
 }
