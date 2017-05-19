@@ -71,6 +71,9 @@ export default {
 <style>
 .comp-recovery {
   position:absolute;
+  width:200px;
+  top:60px;
+  left:800px;
   border-left:#3399CC solid 3px;
   padding-left: 10px;
 }

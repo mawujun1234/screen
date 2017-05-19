@@ -65,6 +65,9 @@ export default {
   position:absolute;
   width:250px;
   height:300px;
+  color:red;
+  top:565px;
+  left:490px;
 
   background-color: rgba(15,42,66, 0.8);
   border-radius: 3px 3px;

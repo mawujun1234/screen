@@ -43,6 +43,7 @@ export default {
 </script>
 <style>
 .comp-title {
+  top:0px;
   width: 100%;
   height: 50px;
   background-image: url("../assets/title_bg.png");

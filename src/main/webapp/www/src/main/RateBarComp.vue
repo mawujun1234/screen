@@ -113,5 +113,10 @@ export default {
 <style>
 .comp-ratebarcomp {
   position:absolute;
+  width:300px;
+  height:340px;
+  min-height:340px;
+  top:260px;
+  left:500px;
 }
 </style>

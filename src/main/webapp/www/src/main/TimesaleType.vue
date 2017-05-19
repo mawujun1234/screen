@@ -106,6 +106,9 @@ export default {
 <style>
 .timesaletype{
   position: absolute;
+  width:200px;
+  top:265px;
+  left:390px;
 }
 #timesaletype_bar{
   width:160px;

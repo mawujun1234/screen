@@ -137,6 +137,9 @@ export default {
 <style>
 .rate-profit{
   position: absolute;
+  width:200px;
+  height:300px;
+  top:265px;
 }
 #rateprofit_pie{
   width:100px;

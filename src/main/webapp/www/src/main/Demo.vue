@@ -82,5 +82,8 @@ export default {
 <style>
 .comp-demo {
   position: absolute;
+  height:200px;
+  width:300px;
+  top:35px;
 }
 </style>

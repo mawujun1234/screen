@@ -106,6 +106,9 @@ export default {
 <style>
 .timesalecomp{
   position: absolute;
+  width:200px;
+  top:265px;
+  left:200px;
 }
 #timesalecomp_bar{
   width:160px;
