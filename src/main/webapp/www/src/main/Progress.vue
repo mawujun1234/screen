@@ -1,7 +1,7 @@
 <!-- 可以用于进度，利率等显示-->
 <template>
-  <div id="rate" class="comp-rate">
-    <div id="rate-profit">
+  <div id="progress" class="comp-progress">
+    <div id="progress-profit">
     </div>
   </div>
 </template>
@@ -9,19 +9,19 @@
 export default {
   data () {
     return {
-      rate_profit:56
+      progress_profit:56
     }
   },
   mounted: function mounted() {
     let vm=this;
-    vm.show_rate_profit();
+    vm.show_progress_profit();
   },
   methods: {
-    show_rate_profit:function(){
+    show_progress_profit:function(){
       let vm=this;
-      var myChart = echarts.init(document.getElementById('rate-profit'));
+      var myChart = echarts.init(document.getElementById('progress-profit'));
 
-      var donum = vm.rate_profit;
+      var donum = vm.progress_profit;
       var option = {
         title:{
           text:'进度',
@@ -64,14 +64,14 @@ export default {
 }
 </script>
 <style>
-.comp-rate{
+.comp-progress{
   position:absolute;
   width:100px;
   height:140px;
   top:260px;
   left:900px;
 }
-#rate-profit{
+#progress-profit{
   width:100%;
   height:100%;
 }

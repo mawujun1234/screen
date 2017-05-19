@@ -11,6 +11,9 @@
     <TimesaleComp id="timesalecomp"></TimesaleComp>
     <TimesaleType id="timesaletype"></TimesaleType>
     <List id="list"></List>
+    <Top id="top"></Top>
+    <Doughnut></Doughnut>
+    <Doughnut0></Doughnut0>
 
     <Alert id="alert"></Alert>
   </div>
@@ -28,6 +31,10 @@ import TimesaleComp from './main/TimesaleComp.vue';
 import TimesaleType from './main/TimesaleType.vue';
 import Alert from './main/Alert.vue';
 import List from './main/List.vue';
+import Top from './main/Top.vue';
+import Doughnut from './main/Doughnut.vue';
+import Doughnut0 from './main/Doughnut0.vue';
+
 
 export default {
   name: 'screen',
@@ -36,7 +43,7 @@ export default {
       msg: ''
     }
   },
-  components: { Demo,Title,Timesale,Recovery,Rate,RateBarComp,RateProfit,TimesaleComp,TimesaleType,Alert,List},
+  components: { Demo,Title,Timesale,Recovery,Rate,RateBarComp,RateProfit,TimesaleComp,TimesaleType,Alert,List,Top,Doughnut,Doughnut0},
   mounted:function(){
 
   }
@@ -62,13 +69,7 @@ export default {
   top:60px;
   left:800px;
 }
-#rate{
-  width:200px;
-  height:140px;
-  min-height:140px;
-  top:260px;
-  left:900px;
-}
+
 #ratebarcomp{
   width:300px;
   height:340px;

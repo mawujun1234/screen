@@ -18,7 +18,7 @@ export default {
     let vm=this;
     setTimeout(function(){
       vm.alert();
-    },15000);
+    },300000);
     vm.alert();
   },
   methods: {
