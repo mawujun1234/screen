@@ -1,5 +1,5 @@
 <template>
-  <div id="list" class="comp-list">
+  <div id="top" class="comp-top">
     <h3>
       门店销售TOP
     </h3>
@@ -63,11 +63,6 @@ export default {
       //this.items.slice(0,0,{code:'6',name:'xxxxz专卖店6',money:'4679.56'});
       this.items[0].money=(Math.random()*10000).toFixed(2);
       this.items.sort(this.sortNumber);
-
-
-
-      //alert();
-    //  this.items = this.items;//_.shuffle(this.items);
     }
   }
 }
@@ -90,7 +85,7 @@ export default {
 .top-move {
   transition: transform 1s;
 }
-.comp-list {
+.comp-top {
   position:absolute;
   top:565px;
   left:760px;
@@ -100,7 +95,7 @@ export default {
   background-color: rgba(15,42,66, 0.8);
   border-radius: 3px 3px;
 }
-.comp-list h3{
+.comp-top h3{
   color:#3399CC;
   font-size: 18px;
   margin-top: 5px;

@@ -4,18 +4,19 @@
     <Demo ></Demo>
     <Title></Title>
     <Timesale></Timesale>
-    <Recovery id="recovery"></Recovery>
-    <Rate id="rate"></Rate>
-    <RateBarComp id="ratebarcomp"></RateBarComp>
-    <RateProfit id="rateprofit"></RateProfit>
-    <TimesaleComp id="timesalecomp"></TimesaleComp>
-    <TimesaleType id="timesaletype"></TimesaleType>
-    <List id="list"></List>
-    <Top id="top"></Top>
+    <Recovery></Recovery>
+    <Rate></Rate>
+    <RateBarComp></RateBarComp>
+    <RateProfit></RateProfit>
+    <TimesaleComp></TimesaleComp>
+    <TimesaleType></TimesaleType>
+    <List></List>
+    <Top></Top>
     <Doughnut></Doughnut>
     <Doughnut0></Doughnut0>
+    <Map></Map>
 
-    <Alert id="alert"></Alert>
+    <Alert></Alert>
   </div>
 </template>
 
@@ -34,6 +35,7 @@ import List from './main/List.vue';
 import Top from './main/Top.vue';
 import Doughnut from './main/Doughnut.vue';
 import Doughnut0 from './main/Doughnut0.vue';
+import Map from './main/Map.vue';
 
 
 export default {
@@ -43,7 +45,8 @@ export default {
       msg: ''
     }
   },
-  components: { Demo,Title,Timesale,Recovery,Rate,RateBarComp,RateProfit,TimesaleComp,TimesaleType,Alert,List,Top,Doughnut,Doughnut0},
+  components: { Demo,Title,Timesale,Recovery,Rate,RateBarComp,RateProfit,TimesaleComp,
+    TimesaleType,Alert,List,Top,Doughnut,Doughnut0,Map},
   mounted:function(){
 
   }
