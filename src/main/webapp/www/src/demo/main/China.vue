@@ -1,6 +1,6 @@
 <template>
-  <div id="map" class="comp-map">
-    <div id="map_chart">
+  <div id="china" class="comp-china">
+    <div id="china_chart">
     </div>
   </div>
 </template>
@@ -15,15 +15,15 @@ export default {
     let vm=this;
     $.get('../static/china.json', function (chinaJson) {
       echarts.registerMap('china', chinaJson);
-      vm.show_map();
+      vm.show_china();
     });
 
   },
   methods: {
-    show_map:function(){
+    show_china:function(){
 
       var vm=this;
-      var myChart = echarts.init(document.getElementById('map_chart'));
+      var myChart = echarts.init(document.getElementById('china_chart'));
       var data = [
     {name: '海门', value: 9},
     {name: '鄂尔多斯', value: 12},
@@ -436,14 +436,14 @@ setInterval(function(){
 }
 </script>
 <style>
-.comp-map{
+.comp-china{
   position:absolute;
   top:530px;
   left:10px;
   width:380px;
   height:350px;
 }
-#map_chart{
+#china_chart{
   width:100%;
   height:100%;
 }

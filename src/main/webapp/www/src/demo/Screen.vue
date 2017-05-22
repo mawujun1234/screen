@@ -2,7 +2,7 @@
   <!-- 存放背景图片啥的-->
   <div id="screen">
     <Demo ></Demo>
-    <Title1></Title1>
+    <Headerr></Headerr>
     <Timesale></Timesale>
     <Recovery></Recovery>
     <Rate></Rate>
@@ -14,7 +14,7 @@
     <Top></Top>
     <Doughnut></Doughnut>
     <Doughnut0></Doughnut0>
-    <Map></Map>
+    <China></China>
 
     <Alert></Alert>
   </div>
@@ -22,7 +22,7 @@
 
 <script>
 import Demo from './main/Demo.vue';
-import Title1 from './main/Title1.vue';
+import Headerr from './main/Headerr.vue';
 import Timesale from './main/Timesale.vue';
 import Recovery from './main/Recovery.vue';
 import Rate from './main/Rate.vue';
@@ -35,7 +35,7 @@ import List from './main/List.vue';
 import Top from './main/Top.vue';
 import Doughnut from './main/Doughnut.vue';
 import Doughnut0 from './main/Doughnut0.vue';
-import Map from './main/Map.vue';
+import China from './main/China.vue';
 
 
 export default {
@@ -45,8 +45,8 @@ export default {
       msg: ''
     }
   },
-  components: { Demo,Title1,Timesale,Recovery,Rate,RateBarComp,RateProfit,TimesaleComp,
-    TimesaleType,Alert,List,Top,Doughnut,Doughnut0,Map},
+  components: { Demo,Headerr,Timesale,Recovery,Rate,RateBarComp,RateProfit,TimesaleComp,
+    TimesaleType,Alert,List,Top,Doughnut,Doughnut0,China},
   mounted:function(){
 
   }

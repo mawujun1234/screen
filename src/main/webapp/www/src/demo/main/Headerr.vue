@@ -1,11 +1,11 @@
-<template>
-  <div id="title" class="comp-title">
+ <template>
+  <div id="headerr" class="comp-headerr">
     XXX实时监控大屏
-    <div id="title-nowtime">2017.12.23 11:22:55</div>
+    <div id="headerr-nowtime">2017.12.23 11:22:55</div>
   </div>
 </template>
 <script>
-var title_nowtime=null;
+var headerr_nowtime=null;
 window.nowtime=function(){
               var nowDate = new Date();
               var year = nowDate.getFullYear();
@@ -20,7 +20,7 @@ window.nowtime=function(){
               var second = nowDate.getSeconds();
               second = second>9 ? second : "0" + second;
 
-              title_nowtime.text(year+"."+month+"."+date+" "+hour+":"+miunte+":"+second);
+              headerr_nowtime.text(year+"."+month+"."+date+" "+hour+":"+miunte+":"+second);
 }
 export default {
   data () {
@@ -29,8 +29,8 @@ export default {
     }
   },
   mounted:function(){
-    title_nowtime=$("#title-nowtime");
-    if(title_nowtime){
+    headerr_nowtime=$("#headerr-nowtime");
+    if(headerr_nowtime){
       nowtime();
       setInterval("nowtime()", 1000);
     }
@@ -42,11 +42,11 @@ export default {
 }
 </script>
 <style>
-.comp-title {
+.comp-headerr {
   top:0px;
   width: 100%;
   height: 50px;
-  background-image: url("../../assets/title_bg.png");
+  background-image: url("../../assets/header_bg.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
 
@@ -58,7 +58,7 @@ export default {
   color: white;
   position: absolute;
 }
-.comp-title div {
+.comp-headerr div {
   color:rgba(255, 255, 255, 0.498039);
   font-family: "Microsoft Yahei";
   font-size: 12px;
