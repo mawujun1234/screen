@@ -2,7 +2,7 @@
   <!-- 存放背景图片啥的-->
   <div id="screen">
     <Demo ></Demo>
-    <Title></Title>
+    <Title1></Title1>
     <Timesale></Timesale>
     <Recovery></Recovery>
     <Rate></Rate>
@@ -22,7 +22,7 @@
 
 <script>
 import Demo from './main/Demo.vue';
-import Title from './main/Title.vue';
+import Title1 from './main/Title1.vue';
 import Timesale from './main/Timesale.vue';
 import Recovery from './main/Recovery.vue';
 import Rate from './main/Rate.vue';
@@ -45,7 +45,7 @@ export default {
       msg: ''
     }
   },
-  components: { Demo,Title,Timesale,Recovery,Rate,RateBarComp,RateProfit,TimesaleComp,
+  components: { Demo,Title1,Timesale,Recovery,Rate,RateBarComp,RateProfit,TimesaleComp,
     TimesaleType,Alert,List,Top,Doughnut,Doughnut0,Map},
   mounted:function(){
 

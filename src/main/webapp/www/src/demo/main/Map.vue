@@ -13,7 +13,7 @@ export default {
   },
   mounted: function mounted() {
     let vm=this;
-    $.get('libs/china.json', function (chinaJson) {
+    $.get('../static/china.json', function (chinaJson) {
       echarts.registerMap('china', chinaJson);
       vm.show_map();
     });

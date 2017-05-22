@@ -1,7 +1,7 @@
 <template>
   <div id="alert" class="comp-alert comp-alert-animation">
     <div class="comp-alert-title">
-      <img src="../assets/timg.png" style="width:50px;vertical-align:middel;"/>
+      <img src="../../assets/timg.png" style="width:50px;vertical-align:middel;"/>
       警告：有可疑交易发生，请注意!
     </div>
   </div>
