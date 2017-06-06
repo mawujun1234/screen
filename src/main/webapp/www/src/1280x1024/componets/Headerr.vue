@@ -1,7 +1,7 @@
  <template>
-  <div id="headerr" class="c-header">
+  <div id="headerr" class="c-header ">
     XXX实时监控大屏
-    <div id="c-header-nowtime">2017.12.23 11:22:55</div>
+    <div class="c-header-nowtime">2017.12.23 11:22:55</div>
   </div>
 </template>
 <script>
@@ -29,7 +29,7 @@ export default {
     }
   },
   mounted:function(){
-    headerr_nowtime=$("#headerr-nowtime");
+    headerr_nowtime=$(".c-header-nowtime");
     if(headerr_nowtime){
       nowtime();
       setInterval("nowtime()", 1000);

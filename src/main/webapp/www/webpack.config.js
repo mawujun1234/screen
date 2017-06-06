@@ -7,7 +7,7 @@ module.exports = {
   //entry: './src/main.js',
   entry:{
     'demo': './src/demo/main.js'
-    //,'login': './src/login/main.js'
+    ,'1280x1024': './src/1280x1024/main.js'
   },
   // output: {
   //   path: path.resolve(__dirname, './dist'),
@@ -73,12 +73,23 @@ module.exports.plugins = (module.exports.plugins || []).concat([
     filename: 'demo/index.html',
     template: './src/demo/index.html',
     inject: false,
-    chunks: ['demo']
-    //hash:true,
-    // minify:{
-    //           removeComments:false,
-    //           collapseWhitespace:false
-    //       }
+    chunks: ['demo'],
+    hash:true,
+    minify:{
+              removeComments:false,
+              collapseWhitespace:false
+          }
+  })
+  ,new HtmlWebpackPlugin({
+    filename: '1280x1024/index.html',
+    template: './src/1280x1024/index.html',
+    inject: false,
+    chunks: ['1280x1024'],
+    hash:true,
+    minify:{
+              removeComments:false,
+              collapseWhitespace:false
+          }
   })
   // ,new HtmlWebpackPlugin({
   //   filename: 'login/index.html',
