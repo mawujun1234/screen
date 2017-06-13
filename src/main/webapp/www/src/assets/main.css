@@ -82,5 +82,10 @@ body {
 }
 .c-list-row .c-list-num {
   padding-right: 5px;
-  width:60px;
+  width:50px;
+  text-align: right;
+}
+.c-list-row .c-list-rank {
+  width:20px;
+  text-align: left;
 }

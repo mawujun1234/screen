@@ -1,11 +1,8 @@
 <template>
   <div id="salelist" class="c-list border-corner">
-    <h3>
-      门店实时销售清单
-    </h3>
     <div class="c-list-group">
       <div class="c-list-row">
-        <div class="c-list-col c-list-title c-list-name">门店</div>
+        <div class="c-list-col c-list-title c-list-name">门店销售清单</div>
         <div class="c-list-col c-list-title c-list-num">金额</div>
       </div>
       <transition-group name="list" tag="p">
@@ -26,7 +23,7 @@ export default {
         {code:'2',name:'xxxxz专卖店',money:'2569.12'},
         {code:'3',name:'xxxxz宁波水电费水电费水电费sdfwe专卖店',money:'2569.12'}
       ],
-      max_length:5
+      max_length:12
     }
   },
   mounted: function mounted() {
@@ -50,10 +47,10 @@ export default {
 </script>
 <style>
 #salelist{
-  top:70px;
+  top:260px;
   left:15px;
   width:340px;
-  height:560px;
+  height:320px;
 }
 
 .list-enter-active, .list-leave-active {

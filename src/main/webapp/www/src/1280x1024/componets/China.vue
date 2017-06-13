@@ -438,7 +438,7 @@ setInterval(function(){
 <style>
 .c-china{
   position:absolute;
-  top:190px;
+  top:170px;
   left:330px;
 
 }

@@ -1,6 +1,6 @@
 <template>
-  <div id="timesalecomp" class="timesalecomp border-corner">
-    <div id="timesalecomp_bar">
+  <div id="comptimechart" class="comptimechart border-corner">
+    <div id="comptimechart_bar">
     </div>
   </div>
 </template>
@@ -29,7 +29,7 @@ export default {
   methods: {
     show_sale_bar:function(){
       let vm=this;
-      let myChart = echarts.init(document.getElementById('timesalecomp_bar'));
+      let myChart = echarts.init(document.getElementById('comptimechart_bar'));
       vm.myChart=myChart;
       var option = {
         title: {
@@ -105,12 +105,14 @@ export default {
 }
 </script>
 <style>
-.timesalecomp{
+.comptimechart{
   position: absolute;
-  top:220px;
-  left:900px;
+  /**top:220px;
+  left:900px;**/
+  top:650px;
+  left:10px;
 }
-#timesalecomp_bar{
+#comptimechart_bar{
   width:340px;
   height:410px;
 }
