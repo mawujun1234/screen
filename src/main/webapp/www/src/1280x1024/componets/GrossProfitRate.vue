@@ -23,14 +23,14 @@ export default {
 
       var donum = vm.grossprofilerate_profit;
       var option = {
-        title:{
-          text:'毛利率',
-          textStyle:{
-            color:'#3399CC',//#3366CC
-            fontSize:14
-          }
-          ,left:'center'
-        },
+        // title:{
+        //   text:'毛利率',
+        //   textStyle:{
+        //     color:'#3399CC',//#3366CC
+        //     fontSize:14
+        //   }
+        //   ,left:'center'
+        // },
         series: [{
             type: 'pie',
             radius: ['70%', '85%'],
@@ -49,7 +49,7 @@ export default {
             },
             data: [{
                     value: donum,
-                    name: donum+'%'
+                    name: "毛利率\n"+donum+'%'
                 },{
                     value: 100 - donum,
                     name: ''
@@ -67,10 +67,10 @@ export default {
 .c-grossprofilerate{
   position:absolute;
   top:70px;
-  left:900px;
+  left:850px;
 }
 #grossprofilerate_chart{
-  width:100px;
-  height:140px;
+  width:120px;
+  height:150px;
 }
 </style>

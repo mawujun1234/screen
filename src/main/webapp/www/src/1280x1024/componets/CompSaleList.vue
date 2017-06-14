@@ -67,9 +67,9 @@ export default {
 <style>
 #compsalelist{
   position: absolute;
-  top:220px;
-  left:900px;
-  width:340px;
+  top:260px;
+  left:850px;
+  width:380px;
   height:320px;
 }
 

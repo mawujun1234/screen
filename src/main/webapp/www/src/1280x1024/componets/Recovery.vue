@@ -73,7 +73,7 @@ export default {
   position:absolute;
   width:280px;
   top:70px;
-  left:680px;
+  left:620px;
   border-left:#3399CC solid 3px;
   padding-left: 10px;
 }

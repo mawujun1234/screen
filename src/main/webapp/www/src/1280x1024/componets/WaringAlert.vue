@@ -2,7 +2,7 @@
   <div id="waringalert" class="comp-waringalert comp-waringalert-animation">
     <div class="comp-waringalert-title">
       <img src="../../assets/timg.png" style="width:50px;vertical-align:middel;"/>
-      警告：有可疑交易发生，请注意!
+      {{msg}}
     </div>
   </div>
 </template>
@@ -10,6 +10,7 @@
 export default {
   data () {
     return {
+      msg:'警告：有可疑交易发生，请注意!',
       waringalerting:false
     }
   },
@@ -22,8 +23,13 @@ export default {
     //vm.waringalert();
   },
   methods: {
-    waringalert:function(){
+    waringalert:function(msg){
       var vm=this;
+      if(msg){
+        vm.msg=msg;
+      } else {
+        vm.msg="警告：有可疑交易发生，请注意!";
+      }
 
       if(vm.waringalerting){
         return;
@@ -36,7 +42,7 @@ export default {
         $("#waringalert").slideUp("slow");
         vm.waringalerting=false;
         //$("#waringalert").removeClass("comp-waringalert-animation");
-      },3000)
+      },2000)
     }
   }
 }

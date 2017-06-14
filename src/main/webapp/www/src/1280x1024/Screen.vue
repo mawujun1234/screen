@@ -13,11 +13,11 @@ CompTimeChart<template>
     <CostRate></CostRate>
     <DiscountRate></DiscountRate>
 
-    <ChanclRate></ChanclRate>
+    <!--<ChanclRate></ChanclRate>-->
     <CompSaleList></CompSaleList>
 
     <WaringList></WaringList>
-    <WaringAlert></WaringAlert>
+    <WaringAlert ref="waringalert"></WaringAlert>
 
   </div>
 </template>
@@ -33,7 +33,7 @@ import ProdType from './componets/ProdType.vue';
 import GrossProfitRate from './componets/GrossProfitRate.vue';
 import CostRate from './componets/CostRate.vue';
 import DiscountRate from './componets/DiscountRate.vue';
-import ChanclRate from './componets/ChanclRate.vue';
+//import ChanclRate from './componets/ChanclRate.vue';
 import CompSaleList from './componets/CompSaleList.vue';
 import WaringList from './componets/WaringList.vue';
 import WaringAlert from './componets/WaringAlert.vue';
@@ -47,7 +47,7 @@ export default {
       msg: ''
     }
   },
-  components: {SaleList,Headerr,TimeSale,Recovery,China,ProdType,GrossProfitRate,CostRate,DiscountRate,ChanclRate
+  components: {SaleList,Headerr,TimeSale,Recovery,China,ProdType,GrossProfitRate,CostRate,DiscountRate
     ,CompSaleList,WaringList,WaringAlert},
   mounted:function(){
 

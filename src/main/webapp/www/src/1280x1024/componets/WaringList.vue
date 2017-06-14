@@ -32,19 +32,20 @@ export default {
 
     setInterval(function(){
       vm.add();
-    },2000);
+    },6000);
   },
   methods: {
     add: function () {
       var date1=new Date();
+
       var time=(date1.getMonth()+1)+"-"+date1.getDate()+" "+date1.getHours()+":"+date1.getMinutes();
-      this.items.splice(0, 0, {code:date1.getTime(),name:'风险事件'+time,time:time});
+      let name='风险事件'+time;
+      this.items.splice(0, 0, {code:date1.getTime(),name:name,time:time});
       if(this.items.length>this.max_length){
         this.items.splice(this.items.length-1,1);
       }
       //获取WaringAlert，弹出红色警告框
-      //bus.$emit('waringalert', "aaaaaa");
-      alert(WaringAlert);
+      this.$parent.$refs.waringalert.waringalert(name);
 
     }
   }

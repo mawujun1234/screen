@@ -23,14 +23,14 @@ export default {
 
       var donum = vm.discountrate;
       var option = {
-        title:{
-          text:'折扣',
-          textStyle:{
-            color:'#3399CC',//#3366CC
-            fontSize:14
-          }
-          ,left:'center'
-        },
+        // title:{
+        //   text:'折扣',
+        //   textStyle:{
+        //     color:'#3399CC',//#3366CC
+        //     fontSize:14
+        //   }
+        //   ,left:'center'
+        // },
         series: [{
             type: 'pie',
             radius: ['70%', '85%'],
@@ -49,7 +49,7 @@ export default {
             },
             data: [{
                     value: donum,
-                    name: donum+'折'
+                    name: "折扣\n"+donum+''
                 },{
                     value: 10 - donum,
                     name: ''
@@ -67,10 +67,10 @@ export default {
 .c-discountrate{
   position:absolute;
   top:70px;
-  left:1140px;
+  left:1120px;
 }
 #discountrate_chart{
-  width:100px;
-  height:140px;
+  width:120px;
+  height:150px;
 }
 </style>
