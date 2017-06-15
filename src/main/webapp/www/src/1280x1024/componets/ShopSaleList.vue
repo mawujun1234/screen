@@ -1,5 +1,6 @@
+<!-- 门店实时销售清单-->
 <template>
-  <div id="salelist" class="c-list border-corner">
+  <div id="shopsalelist" class="c-list border-corner">
     <div class="c-list-group">
       <div class="c-list-row">
         <div class="c-list-col c-list-title c-list-name">门店销售清单</div>
@@ -46,7 +47,7 @@ export default {
 }
 </script>
 <style>
-#salelist{
+#shopsalelist{
   top:260px;
   left:15px;
   width:340px;
