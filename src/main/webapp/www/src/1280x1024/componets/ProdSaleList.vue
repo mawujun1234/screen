@@ -67,7 +67,7 @@ export default {
   top:630px;
   left:850px;
   width:380px;
-  height:320px;
+  height:290px;
 }
 
 .prodsalelist-enter-active  {

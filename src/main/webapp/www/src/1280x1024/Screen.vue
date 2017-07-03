@@ -14,14 +14,24 @@
     <CostRate></CostRate>
     <DiscountRate></DiscountRate>
 
-    <DaySaleLine></DaySaleLine>
+    <!--<DaySaleLine></DaySaleLine>-->
     <!--<ChanclRate></ChanclRate>-->
     <CompSaleList></CompSaleList>
     <ProdSaleList></ProdSaleList>
 
     <WaringList></WaringList>
     <WaringAlert ref="waringalert"></WaringAlert>
+    <SurfaceEfficiency></SurfaceEfficiency>
+    <PeopleEfficiency></PeopleEfficiency>
+    <JointRate></JointRate>
+    <SelloutRate></SelloutRate>
 
+    <Perticketsales></Perticketsales>
+    <Turnover></Turnover>
+    <IntoSale></IntoSale>
+    <Customer></Customer>
+
+    <Playlists></Playlists>
   </div>
 </template>
 
@@ -43,10 +53,18 @@ import ProdSaleList from './componets/ProdSaleList.vue';
 import WaringList from './componets/WaringList.vue';
 import WaringAlert from './componets/WaringAlert.vue';
 
-import DaySaleLine from './componets/DaySaleLine.vue';
-
+//import DaySaleLine from './componets/DaySaleLine.vue';
+import SurfaceEfficiency from './componets/SurfaceEfficiency.vue';
+import PeopleEfficiency from './componets/PeopleEfficiency.vue';
+import JointRate from './componets/JointRate.vue';
+import SelloutRate from './componets/SelloutRate.vue';
 //var bus = new Vue();
+import Perticketsales from './componets/Perticketsales.vue';
+import Turnover from './componets/Turnover.vue';
+import IntoSale from './componets/IntoSale.vue';
+import Customer from './componets/Customer.vue';
 
+import Playlists from './componets/Playlists.vue';
 export default {
   name: 'screen',
   data () {
@@ -55,7 +73,8 @@ export default {
     }
   },
   components: {ShopTop10,Headerr,TimeSale,Recovery,China,ProdSaleList,GrossProfitRate,CostRate,DiscountRate
-    ,CompSaleList,WaringList,WaringAlert,DaySaleLine},
+    ,CompSaleList,WaringList,WaringAlert,SurfaceEfficiency,PeopleEfficiency,JointRate,SelloutRate,Perticketsales,Turnover,IntoSale,Customer
+  ,Playlists},
   mounted:function(){
 
   }
