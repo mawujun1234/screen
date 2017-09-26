@@ -42,7 +42,7 @@ export default {
         $("#waringalert").slideUp("slow");
         vm.waringalerting=false;
         //$("#waringalert").removeClass("comp-waringalert-animation");
-      },2000)
+      },120000)
     }
   }
 }
